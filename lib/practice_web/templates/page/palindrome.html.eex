@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="column">
+    <p><%= link "← go back", to: "/" %></p>
+    <h2>Palindrome Results</h2>
+
+    <p>given string = <%= @x %></p>
+    <p>is the given string a palindrome? <%= @y %></p>
+  </div>
+</div>

@@ -9,9 +9,10 @@ defmodule Practice.Calc do
     # but doesn't need to handle parens.
     expr
     |> String.split(~r/\s+/)
-    |> hd
-    |> parse_float
-    |> :math.sqrt()
+    #|> Enum.map(fn(x) -> {:op, x} end)
+    # |> hd
+    # |> parse_float
+    # |> :math.sqrt()
 
     # Hint:
     # expr
