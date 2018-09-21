@@ -17,15 +17,15 @@ defmodule Practice.PracticeTest do
     assert factor(1575) == [3,3,5,5,7]
   end
 
-  # test "evaluate some expressions" do
-  #   assert calc("5") == 5
-  #   assert calc("5 + 1") == 6
-  #   assert calc("5 * 3") == 15
-  #   assert calc("10 / 2") == 5
-  #   assert calc("10 - 2") == 8
-  #   assert calc("5 * 3 + 8") == 23
-  #   assert calc("8 + 5 * 3") == 23
-  # end
+  test "evaluate some expressions" do
+    assert calc("5") == 5
+    assert calc("5 + 1") == 6
+    assert calc("5 * 3") == 15
+    assert calc("10 / 2") == 5
+    assert calc("10 - 2") == 8
+    assert calc("5 * 3 + 8") == 23
+    assert calc("8 + 5 * 3") == 23
+  end
 
   test "check if some string is a palindrome" do
     assert palindrome("racecar") == true

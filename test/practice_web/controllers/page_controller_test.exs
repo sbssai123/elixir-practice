@@ -16,10 +16,10 @@ defmodule PracticeWeb.PageControllerTest do
     assert html_response(conn, 200) =~ "10"
   end
 
-  # test "factor 255", %{conn: conn} do
-  #   conn = post conn, "/factor", %{"x" => "255"}
-  #   assert html_response(conn, 200) =~ "17"
-  # end
+  test "factor 255", %{conn: conn} do
+    conn = post conn, "/factor", %{"x" => "255"}
+    assert html_response(conn, 200) =~ "17"
+  end
 
   test "palindrome racecar", %{conn: conn} do
     conn = post conn, "/palindrome", %{"x" => "racecar"}
